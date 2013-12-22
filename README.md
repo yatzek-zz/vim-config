@@ -1,11 +1,9 @@
-
 About
-====
+=====
 
 My vim configuration. Very handy if you work on multiple machines.
 
-Usage
-====
+## Installation
 
 1. Clone the repo to your home foler:
 
@@ -17,8 +15,7 @@ Usage
 	ln -s $HOME/vim-config/vimrc $HOME/.vimrc
 	ln -s $HOME/vim-config/vim $HOME/.vim
 
-Features
-===
+## Features
 
 All extensions are included using Pathogen from the vim/bundles directory. 
 
