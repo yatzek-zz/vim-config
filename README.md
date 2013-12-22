@@ -1,5 +1,4 @@
-About
-=====
+## About
 
 My vim configuration. Very handy if you work on multiple machines.
 
