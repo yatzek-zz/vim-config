@@ -119,3 +119,8 @@ let g:solarized_termcolors=256
 colorscheme solarized
 " *** SOLARIZED COLOR SCHEME ***
 
+" *** NERDTREE ***
+" https://github.com/scrooloose/nerdtree
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+" *** NERDTREE ***
