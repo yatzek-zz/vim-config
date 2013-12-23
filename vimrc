@@ -95,12 +95,15 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" *** TMP FOLDER - SWAP AND BACKUP *** 
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.
+" *** TMP FOLDER - SWAP AND BACKUP *** 
+
 " *** POWERLINE ***
 "set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-
 " Always show statusline
 set laststatus=2
-
 " Use 256 colours (Use this setting only if your terminal supports 256  colours)
 set t_Co=256
 " *** POWERLINE ***
