@@ -129,15 +129,8 @@ map <C-n> :NERDTreeToggle<CR>
 " *** NERDTREE ***
 
 " *** GOLANG ***
-"syntax on
-"filetype off
-"filetype plugin indent off
-"set runtimepath+=$GOROOT/misc/vim
-"filetype plugin indent on
-"
-" compiler plugin - compiles on save???
+" load compiler definition for go
 autocmd FileType go compiler go
-
 " gofmt files on save
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 " *** GOLANG ***
