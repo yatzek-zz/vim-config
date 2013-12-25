@@ -135,3 +135,33 @@ autocmd FileType go compiler go
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 " *** GOLANG ***
 
+" *** GOCODE ***
+" Golang autocompletion
+" Install gocode daemon: go get -u github.com/nsf/gocode 
+" Set daemon options with: gocode set
+" Install vim-gocode plugin: https://github.com/Blackrush/vim-gocode 
+" Use c-x c-o for autocompletion, c-n, c-p for scrolling
+" *** GOCODE ***
+
+" *** SUPERTAB ***
+" use <TAB> to trigger autocompletion instead of c-x c-o, see gocode plugin above
+let g:SuperTabDefaultCompletionType = "context"
+" *** SUPERTAB ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
