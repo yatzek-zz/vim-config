@@ -209,12 +209,8 @@ let g:godef_split = 2
 let g:godef_same_file_in_same_window = 1
 " *** GODEF ***
 
-
-
-
-
-
-
+" gocentric vim setup: http://0value.com/my-Go-centric-Vim-setup
+" Other plugins: http://www.quora.com/Which-are-the-best-vim-plugins
 
 
 
