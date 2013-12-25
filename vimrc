@@ -201,7 +201,13 @@ let g:tagbar_type_go = {
 " see TAGBAR configuration above 
 " *** GOTAGS ***
 
-
+" *** GODEF ***
+" go get -u code.google.com/p/rog-go/exp/cmd/godef
+" Use gd in normal mode to go to definition
+" open definition in new tab
+let g:godef_split = 2
+let g:godef_same_file_in_same_window = 1
+" *** GODEF ***
 
 
 
