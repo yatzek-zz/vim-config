@@ -95,6 +95,15 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" *** GENERIC STUFF ***
+" set tabs to 2 spaces
+set ts=2 
+" show line numbers
+set nu 
+" incremental search 
+set incsearch
+" *** GENERIC STUFF ***
+
 " *** TMP FOLDER - SWAP AND BACKUP *** 
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
@@ -148,7 +157,13 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 let g:SuperTabDefaultCompletionType = "context"
 " *** SUPERTAB ***
 
-
+" *** YANKSTACK ***
+" \-p       to cycle backwards
+" \-P       to cycle forwards
+" TODO: not working really well 
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
+" *** YANKSTACK ***
 
 
 
