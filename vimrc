@@ -134,7 +134,7 @@ colorscheme solarized
 " *** NERDTREE ***
 " https://github.com/scrooloose/nerdtree
 autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
 " *** NERDTREE ***
 
 " *** GOLANG ***
@@ -160,14 +160,46 @@ let g:SuperTabDefaultCompletionType = "context"
 " *** YANKSTACK ***
 " \-p       to cycle backwards
 " \-P       to cycle forwards
-" TODO: not working really well 
+" TODO: not working really well
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
 " *** YANKSTACK ***
 
+" *** TAGBAR ***
+nmap <F4> :TagbarToggle<CR>
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+" *** TAGBAR ***
 
-
-
+" *** GOTAGS ***
+" go get -u github.com/jstemmer/gotags
+" see TAGBAR configuration above 
+" *** GOTAGS ***
 
 
 
