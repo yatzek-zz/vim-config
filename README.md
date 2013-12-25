@@ -6,10 +6,11 @@ My vim configuration. Very handy if you work on multiple machines.
 
 1. Clone the repo to your home foler:
 
+	cd
 	git clone git@github.com:yatzek/vim-config --recursive 
 
 
-2. Symlink $HOME/vim-config/vimrc to $HOME/.vimrc and $HOME/vim-config/vimrc to $HOME/.vim
+2. Symlink $HOME/vim-config/vimrc to $HOME/.vimrc and $HOME/vim-config/vim to $HOME/.vim
 
 	ln -s $HOME/vim-config/vimrc $HOME/.vimrc
 	ln -s $HOME/vim-config/vim $HOME/.vim
