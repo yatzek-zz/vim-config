@@ -133,14 +133,15 @@ colorscheme solarized
 
 " *** NERDTREE ***
 " https://github.com/scrooloose/nerdtree
-autocmd vimenter * NERDTree                                      " Open on startup 
+" autocmd vimenter * NERDTree                                      " Open on startup 
 autocmd BufEnter * lcd %:p:h                                     " set working dir to current file directory
 " autocmd BufWinEnter * NERDTree
-map <F3> :NERDTreeToggle<CR>
+" map <F5> :NERDTreeToggle<CR>
+map <F2> :NERDTreeCWD<CR>
 " NERDTreeTabs: https://github.com/jistr/vim-nerdtree-tabs
 " One tree for all tabs to make it feel like a true panel
-" map <F5> :NERDTreeTabsToggle<CR>
-" let g:nerdtree_tabs_open_on_console_startup=1
+map <F3> :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_console_startup=1
 " *** NERDTREE ***
 
 " *** GOLANG ***
