@@ -102,6 +102,14 @@ set ts=2
 set nu 
 " incremental search 
 set incsearch
+" split navigation mapings
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+" more natural split opening
+set splitbelow
+set splitright
 " *** GENERIC STUFF ***
 
 " *** TMP FOLDER - SWAP AND BACKUP *** 
@@ -138,7 +146,7 @@ autocmd BufEnter * lcd %:p:h                                     " set working d
 " autocmd BufWinEnter * NERDTree
 " map <F5> :NERDTreeToggle<CR>
 map <F2> :NERDTreeCWD<CR>
-" NERDTreeTabs: https://github.com/jistr/vim-nerdtree-tabs
+" Nerd Tree Tabs plugin: https://github.com/jistr/vim-nerdtree-tabs
 " One tree for all tabs to make it feel like a true panel
 map <F3> :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=1
