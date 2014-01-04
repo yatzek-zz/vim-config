@@ -117,6 +117,10 @@ set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
 " *** TMP FOLDER - SWAP AND BACKUP *** 
 
+" *** CLEAR LAST SEARCH TO LOOSE HIGHLIGHTING BY PRESSING :C ***
+command C let @/="" 
+" *** CLEAR LAST SEARCH TO LOOSE HIGHLIGHTING BY PRESSING :C ***
+ 
 " *** POWERLINE ***
 "set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 " Always show statusline
