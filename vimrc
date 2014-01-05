@@ -102,11 +102,18 @@ set ts=2
 set nu 
 " incremental search 
 set incsearch
-" split navigation mapings
+" window navigation mapings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" window resize mappings 
+nnoremap <S-J> <C-W>-
+nnoremap <S-K> <C-W>+
+nnoremap <S-L> <C-W>>
+nnoremap <S-H> <C-W><
+
 " more natural split opening
 set splitbelow
 set splitright
@@ -156,21 +163,6 @@ map <F3> :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=1
 " *** NERDTREE ***
 
-" *** GOLANG ***
-" load compiler definition for go
-autocmd FileType go compiler go
-" gofmt files on save
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-" *** GOLANG ***
-
-" *** GOCODE ***
-" Golang autocompletion
-" Install gocode daemon: go get -u github.com/nsf/gocode 
-" Set daemon options with: gocode set
-" Install vim-gocode plugin: https://github.com/Blackrush/vim-gocode 
-" Use c-x c-o for autocompletion, c-n, c-p for scrolling
-" *** GOCODE ***
-
 " *** SUPERTAB ***
 " use <TAB> to trigger autocompletion instead of c-x c-o, see gocode plugin above
 let g:SuperTabDefaultCompletionType = "context"
@@ -214,6 +206,21 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 " *** TAGBAR ***
+
+" *** GOLANG ***
+" load compiler definition for go
+autocmd FileType go compiler go
+" gofmt files on save
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+" *** GOLANG ***
+
+" *** GOCODE ***
+" Golang autocompletion
+" Install gocode daemon: go get -u github.com/nsf/gocode 
+" Set daemon options with: gocode set
+" Install vim-gocode plugin: https://github.com/Blackrush/vim-gocode 
+" Use c-x c-o for autocompletion, c-n, c-p for scrolling
+" *** GOCODE ***
 
 " *** GOTAGS ***
 " go get -u github.com/jstemmer/gotags
