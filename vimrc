@@ -156,7 +156,7 @@ colorscheme solarized
 
 " *** NERDTREE ***
 " https://github.com/scrooloose/nerdtree
-" autocmd vimenter * NERDTree                                      " Open on startup 
+" autocmd vimenter * NERDTree                                    " Open on startup 
 autocmd BufEnter * lcd %:p:h                                     " set working dir to current file directory
 " autocmd BufWinEnter * NERDTree
 " map <F5> :NERDTreeToggle<CR>
@@ -179,6 +179,10 @@ let g:SuperTabDefaultCompletionType = "context"
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
 " *** YANKSTACK ***
+
+" *** CHANGES PLUGIN ***
+let g:changes_autocmd=1 
+" *** CHANGES PLUGIN ***
 
 " *** TAGBAR ***
 nmap <F4> :TagbarToggle<CR>

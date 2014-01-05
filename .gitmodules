@@ -67,3 +67,6 @@
 [submodule "vim/bundle/vim-colorschemes"]
 	path = vim/bundle/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "vim/bundle/changesPlugin"]
+	path = vim/bundle/changesPlugin
+	url = https://github.com/chrisbra/changesPlugin
