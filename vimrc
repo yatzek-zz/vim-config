@@ -114,6 +114,10 @@ nnoremap <S-K> <C-W>+
 nnoremap <S-L> <C-W>>
 nnoremap <S-H> <C-W><
 
+" tab navigation mappings
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
 " more natural split opening
 set splitbelow
 set splitright
