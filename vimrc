@@ -181,7 +181,7 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 " *** YANKSTACK ***
 
 " *** CHANGES PLUGIN ***
-let g:changes_autocmd=1 
+" let g:changes_autocmd=1 
 " *** CHANGES PLUGIN ***
 
 " *** TAGBAR ***
