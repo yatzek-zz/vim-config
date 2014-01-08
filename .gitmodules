@@ -73,3 +73,12 @@
 [submodule "vim/bundle/vim-auto-save"]
 	path = vim/bundle/vim-auto-save
 	url = https://github.com/907th/vim-auto-save
+[submodule "vim/bundle/vimux"]
+	path = vim/bundle/vimux
+	url = https://github.com/benmills/vimux
+[submodule "vim/bundle/vimux-golang"]
+	path = vim/bundle/vimux-golang
+	url = https://github.com/benmills/vimux-golang
+[submodule "vim/bundle/vim-tmux-navigator"]
+	path = vim/bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator

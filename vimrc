@@ -256,7 +256,7 @@ let g:godef_same_file_in_same_window = 1
 nmap <F9> :make %<CR>:cwindow<CR>
 " TODO: read current value of makeprg, save it aside, change it to: go run,
 " make, show quickfix, set it back to orig
-nmap <F10> :!go run %<CR>:cwindow<CR>
+nmap <F10> :!go run %<CR>
 " *** BUILD & RUN GO FILES ***
 
 " gocentric vim setup: http://0value.com/my-Go-centric-Vim-setup
