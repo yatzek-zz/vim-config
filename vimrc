@@ -102,6 +102,7 @@ set ts=2
 set nu 
 " incremental search 
 set incsearch
+
 " window navigation mapings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -184,6 +185,14 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 " let g:changes_autocmd=1 
 " *** CHANGES PLUGIN ***
 
+" *** AUTO-SAVE PLUGIN ***
+" this will autosave every 'updatetime' (4s)
+let g:auto_save = 1
+let g:auto_save_no_updatetime = 1
+" autosave file on buffer switch or on make
+set autowriteall
+" *** AUTO-SAVE PLUGIN ***
+
 " *** TAGBAR ***
 nmap <F4> :TagbarToggle<CR>
 let g:tagbar_type_go = {
@@ -242,6 +251,13 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 let g:godef_split = 2
 let g:godef_same_file_in_same_window = 1
 " *** GODEF ***
+
+" *** BUILD & RUN GO FILES ***
+nmap <F9> :make %<CR>:cwindow<CR>
+" TODO: read current value of makeprg, save it aside, change it to: go run,
+" make, show quickfix, set it back to orig
+nmap <F10> :!go run %<CR>:cwindow<CR>
+" *** BUILD & RUN GO FILES ***
 
 " gocentric vim setup: http://0value.com/my-Go-centric-Vim-setup
 " Other plugins: http://www.quora.com/Which-are-the-best-vim-plugins
