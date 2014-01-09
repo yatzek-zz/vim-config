@@ -17,10 +17,21 @@ My vim configuration. Very handy if you work on multiple machines.
 
 ## Features
 
-All extensions are included using Pathogen from the vim/bundles directory. 
+All extensions are included using Pathogen from the vim/bundle directory. 
 
 Some of them are:
 
 * TODO 
 * Golang
 * Solarized
+
+## Tweaking
+
+To add submodule:
+	
+	git submodule add <repo_url> vim/bundle/<plugin_folder>
+
+To remove submodule:
+
+	git submodule deinit <submodule>
+	git rm <submodule>  
