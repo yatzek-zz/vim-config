@@ -173,14 +173,6 @@ let g:nerdtree_tabs_open_on_console_startup=1
 let g:SuperTabDefaultCompletionType = "context"
 " *** SUPERTAB ***
 
-" *** YANKSTACK ***
-" \-p       to cycle backwards
-" \-P       to cycle forwards
-" TODO: not working really well
-nmap <leader>p <Plug>yankstack_substitute_older_paste
-nmap <leader>P <Plug>yankstack_substitute_newer_paste
-" *** YANKSTACK ***
-
 " *** CHANGES PLUGIN ***
 " let g:changes_autocmd=1 
 " *** CHANGES PLUGIN ***
@@ -188,7 +180,7 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 " *** AUTO-SAVE PLUGIN ***
 " this will autosave every 'updatetime' (4s)
 let g:auto_save = 1
-let g:auto_save_no_updatetime = 1
+let g:auto_save_no_updatetime = 1       " comment this out to auto-save more frequently
 " autosave file on buffer switch or on make
 set autowriteall
 " *** AUTO-SAVE PLUGIN ***
