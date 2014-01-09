@@ -82,3 +82,6 @@
 [submodule "vim/bundle/vim-tmux-navigator"]
 	path = vim/bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "vim/bundle/vim-easyclip"]
+	path = vim/bundle/vim-easyclip
+	url = https://github.com/svermeulen/vim-easyclip
