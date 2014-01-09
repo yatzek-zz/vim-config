@@ -102,6 +102,8 @@ set ts=2
 set nu 
 " incremental search 
 set incsearch
+" ctrl-X to quit
+nnoremap <C-x> :q<CR>
 
 " window navigation mapings
 nnoremap <C-J> <C-W><C-J>
@@ -253,6 +255,7 @@ nmap <F10> :!go run %<CR>
 
 " gocentric vim setup: http://0value.com/my-Go-centric-Vim-setup
 " Other plugins: http://www.quora.com/Which-are-the-best-vim-plugins
+
 
 
 
